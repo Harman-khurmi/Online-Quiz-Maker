@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Creator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="create-quiz" class="section">
+            <h2>Create Quiz</h2>
+            <div id="questions-container">
+                <div class="question-item">
+                    <input type="text" placeholder="Enter question" class="question-input">
+                    <input type="text" placeholder="Enter option 1" class="option-input">
+                    <input type="text" placeholder="Enter option 2" class="option-input">
+                    <input type="text" placeholder="Enter option 3" class="option-input">
+                    <input type="text" placeholder="Enter option 4" class="option-input">
+                    <input type="text" placeholder="Enter correct option number (1-4)" class="correct-option-input">
+                </div>
+            </div>
+            <button id="add-question-btn">Add Question</button>
+            <button id="remove-question-btn">Remove Question</button>
+            <button id="send-quiz-btn">Send Quiz</button>
+        </div>
+    </div>
+
+    <script src="creator.js"></script>
+</body>
+</html>

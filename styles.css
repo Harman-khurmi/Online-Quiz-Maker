@@ -1,0 +1,122 @@
+*{
+    font-family: 'Calibri', sans-serif;
+}
+body {
+    background: linear-gradient(135deg, #a44eff 0%, #3a82ff 100%);
+    background-color: #6a11cb;
+    min-height: 100vh;
+    margin: 0;
+    color: black;
+    padding: 20px;
+
+}
+
+.container {
+    color: #333;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.question-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.question-input, .option-input, .correct-option-input, .user-answer {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    
+}
+
+.section #add-question-btn
+{
+    background-color: rgb(38, 197, 17); 
+}
+.section #add-question-btn:hover {
+    background-color: rgb(32, 172, 14); 
+}
+.section #remove-question-btn
+{
+    background-color: #e61919;
+}
+.section #remove-question-btn:hover {
+    background-color: #be1818;
+}
+.section #send-quiz-btn
+{
+    background-color: #4378ff; 
+}
+.section #send-quiz-btn:hover {
+    background-color: #325abe; 
+}
+.section #submit-quiz-btn
+{
+    background-color: #4378ff; 
+    align-items: center;
+}
+.section #submit-quiz-btn:hover {
+    background-color: #325abe; 
+}
+
+.option-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #333;
+    font-weight: 500;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.option-btn:hover {
+    background-color: #ddd;
+}
+
+.option-btn.selected {
+    background-color: #007BFF;
+    color: white;
+}
+#take-quiz{
+    display: flex;
+    flex-direction: column;
+}
+#take-quiz #submit-quiz-btn {
+    align-self:center;
+}
+
+
+/* /////// */
+.option-btn.correct {
+    background-color: green;
+    color: white;
+}
+
+.option-btn.incorrect {
+    background-color: red;
+    color: white;
+}
